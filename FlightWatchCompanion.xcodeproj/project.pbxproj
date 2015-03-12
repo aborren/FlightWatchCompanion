@@ -13,6 +13,27 @@
 		B267739B1AB0398F00F6F587 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B267739A1AB0398F00F6F587 /* Images.xcassets */; };
 		B267739E1AB0398F00F6F587 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B267739C1AB0398F00F6F587 /* LaunchScreen.xib */; };
 		B26773AA1AB0398F00F6F587 /* FlightWatchCompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773A91AB0398F00F6F587 /* FlightWatchCompanionTests.swift */; };
+		B26773BD1AB039AB00F6F587 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773BC1AB039AB00F6F587 /* InterfaceController.swift */; };
+		B26773BF1AB039AB00F6F587 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773BE1AB039AB00F6F587 /* NotificationController.swift */; };
+		B26773C11AB039AB00F6F587 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773C01AB039AB00F6F587 /* GlanceController.swift */; };
+		B26773C31AB039AB00F6F587 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26773C21AB039AB00F6F587 /* Images.xcassets */; };
+		B26773C71AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = B26773C61AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app */; };
+		B26773CF1AB039AB00F6F587 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26773CD1AB039AB00F6F587 /* Interface.storyboard */; };
+		B26773D11AB039AB00F6F587 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26773D01AB039AB00F6F587 /* Images.xcassets */; };
+		B26773D41AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B26773B71AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B26773DD1AB03A6D00F6F587 /* FlightsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773DC1AB03A6D00F6F587 /* FlightsInterfaceController.swift */; };
+		B26773DF1AB03A8000F6F587 /* WeatherInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773DE1AB03A8000F6F587 /* WeatherInterfaceController.swift */; };
+		B26773E11AB03A8F00F6F587 /* CurrencyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773E01AB03A8F00F6F587 /* CurrencyInterfaceController.swift */; };
+		B26773E31AB03C8600F6F587 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773E21AB03C8600F6F587 /* FlightRowController.swift */; };
+		B26773E71AB0447400F6F587 /* airport-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B26773E61AB0447400F6F587 /* airport-50.png */; };
+		B26773E91AB04CA900F6F587 /* DetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773E81AB04CA900F6F587 /* DetailsInterfaceController.swift */; };
+		B26773EB1AB0506700F6F587 /* WeatherRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26773EA1AB0506700F6F587 /* WeatherRowController.swift */; };
+		B26773ED1AB0541500F6F587 /* sun-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B26773EC1AB0541500F6F587 /* sun-50.png */; };
+		B26773EF1AB058D500F6F587 /* currency_exchange-75.png in Resources */ = {isa = PBXBuildFile; fileRef = B26773EE1AB058D500F6F587 /* currency_exchange-75.png */; };
+		B27A58771AB071C10092DE05 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B27A58761AB071C10092DE05 /* ApiKeys.plist */; };
+		B27A58791AB07CAA0092DE05 /* sampleQR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A58781AB07CAA0092DE05 /* sampleQR.jpg */; };
+		B2D477221AB18AE000F98E85 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D477211AB18AE000F98E85 /* Alamofire.swift */; };
+		B2D477241AB1930600F98E85 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D477231AB1930600F98E85 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +44,35 @@
 			remoteGlobalIDString = B267738D1AB0398F00F6F587;
 			remoteInfo = FlightWatchCompanion;
 		};
+		B26773C81AB039AB00F6F587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26773861AB0398F00F6F587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26773C51AB039AB00F6F587;
+			remoteInfo = "FlightWatchCompanion WatchKit App";
+		};
+		B26773D21AB039AB00F6F587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26773861AB0398F00F6F587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26773B61AB039AB00F6F587;
+			remoteInfo = "FlightWatchCompanion WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B26773DB1AB039AB00F6F587 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B26773D41AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B267738E1AB0398F00F6F587 /* FlightWatchCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightWatchCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +85,30 @@
 		B26773A31AB0398F00F6F587 /* FlightWatchCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightWatchCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26773A81AB0398F00F6F587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26773A91AB0398F00F6F587 /* FlightWatchCompanionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWatchCompanionTests.swift; sourceTree = "<group>"; };
+		B26773B71AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlightWatchCompanion WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26773BA1AB039AB00F6F587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26773BB1AB039AB00F6F587 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B26773BC1AB039AB00F6F587 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B26773BE1AB039AB00F6F587 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B26773C01AB039AB00F6F587 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		B26773C21AB039AB00F6F587 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B26773C61AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlightWatchCompanion WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26773CC1AB039AB00F6F587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26773CE1AB039AB00F6F587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B26773D01AB039AB00F6F587 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B26773DC1AB03A6D00F6F587 /* FlightsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsInterfaceController.swift; sourceTree = "<group>"; };
+		B26773DE1AB03A8000F6F587 /* WeatherInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInterfaceController.swift; sourceTree = "<group>"; };
+		B26773E01AB03A8F00F6F587 /* CurrencyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyInterfaceController.swift; sourceTree = "<group>"; };
+		B26773E21AB03C8600F6F587 /* FlightRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
+		B26773E61AB0447400F6F587 /* airport-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airport-50.png"; sourceTree = "<group>"; };
+		B26773E81AB04CA900F6F587 /* DetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInterfaceController.swift; sourceTree = "<group>"; };
+		B26773EA1AB0506700F6F587 /* WeatherRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRowController.swift; sourceTree = "<group>"; };
+		B26773EC1AB0541500F6F587 /* sun-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sun-50.png"; sourceTree = "<group>"; };
+		B26773EE1AB058D500F6F587 /* currency_exchange-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "currency_exchange-75.png"; sourceTree = "<group>"; };
+		B27A58761AB071C10092DE05 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "../FlightWatchCompanion WatchKit App/ApiKeys.plist"; sourceTree = "<group>"; };
+		B27A58781AB07CAA0092DE05 /* sampleQR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleQR.jpg; sourceTree = "<group>"; };
+		B2D477211AB18AE000F98E85 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		B2D477231AB1930600F98E85 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +126,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B26773B41AB039AB00F6F587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B25C61DA1AB1DFB800048B30 /* External Swift Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B2D477211AB18AE000F98E85 /* Alamofire.swift */,
+				B2D477231AB1930600F98E85 /* SwiftyJSON.swift */,
+			);
+			name = "External Swift Libraries";
+			sourceTree = "<group>";
+		};
 		B26773851AB0398F00F6F587 = {
 			isa = PBXGroup;
 			children = (
 				B26773901AB0398F00F6F587 /* FlightWatchCompanion */,
 				B26773A61AB0398F00F6F587 /* FlightWatchCompanionTests */,
+				B26773B81AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension */,
+				B26773CA1AB039AB00F6F587 /* FlightWatchCompanion WatchKit App */,
 				B267738F1AB0398F00F6F587 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +161,8 @@
 			children = (
 				B267738E1AB0398F00F6F587 /* FlightWatchCompanion.app */,
 				B26773A31AB0398F00F6F587 /* FlightWatchCompanionTests.xctest */,
+				B26773B71AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension.appex */,
+				B26773C61AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +205,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B26773B81AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B27A58761AB071C10092DE05 /* ApiKeys.plist */,
+				B26773BC1AB039AB00F6F587 /* InterfaceController.swift */,
+				B26773BE1AB039AB00F6F587 /* NotificationController.swift */,
+				B26773C01AB039AB00F6F587 /* GlanceController.swift */,
+				B26773E01AB03A8F00F6F587 /* CurrencyInterfaceController.swift */,
+				B26773E21AB03C8600F6F587 /* FlightRowController.swift */,
+				B26773EA1AB0506700F6F587 /* WeatherRowController.swift */,
+				B26773E81AB04CA900F6F587 /* DetailsInterfaceController.swift */,
+				B26773DE1AB03A8000F6F587 /* WeatherInterfaceController.swift */,
+				B26773DC1AB03A6D00F6F587 /* FlightsInterfaceController.swift */,
+				B25C61DA1AB1DFB800048B30 /* External Swift Libraries */,
+				B26773C21AB039AB00F6F587 /* Images.xcassets */,
+				B26773B91AB039AB00F6F587 /* Supporting Files */,
+			);
+			path = "FlightWatchCompanion WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B26773B91AB039AB00F6F587 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B26773BA1AB039AB00F6F587 /* Info.plist */,
+				B26773BB1AB039AB00F6F587 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B26773CA1AB039AB00F6F587 /* FlightWatchCompanion WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B26773E61AB0447400F6F587 /* airport-50.png */,
+				B27A58781AB07CAA0092DE05 /* sampleQR.jpg */,
+				B26773CD1AB039AB00F6F587 /* Interface.storyboard */,
+				B26773EE1AB058D500F6F587 /* currency_exchange-75.png */,
+				B26773EC1AB0541500F6F587 /* sun-50.png */,
+				B26773D01AB039AB00F6F587 /* Images.xcassets */,
+				B26773CB1AB039AB00F6F587 /* Supporting Files */,
+			);
+			path = "FlightWatchCompanion WatchKit App";
+			sourceTree = "<group>";
+		};
+		B26773CB1AB039AB00F6F587 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B26773CC1AB039AB00F6F587 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +266,12 @@
 				B267738A1AB0398F00F6F587 /* Sources */,
 				B267738B1AB0398F00F6F587 /* Frameworks */,
 				B267738C1AB0398F00F6F587 /* Resources */,
+				B26773DB1AB039AB00F6F587 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B26773D31AB039AB00F6F587 /* PBXTargetDependency */,
 			);
 			name = FlightWatchCompanion;
 			productName = FlightWatchCompanion;
@@ -150,6 +296,39 @@
 			productReference = B26773A31AB0398F00F6F587 /* FlightWatchCompanionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B26773B61AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26773D81AB039AB00F6F587 /* Build configuration list for PBXNativeTarget "FlightWatchCompanion WatchKit Extension" */;
+			buildPhases = (
+				B26773B31AB039AB00F6F587 /* Sources */,
+				B26773B41AB039AB00F6F587 /* Frameworks */,
+				B26773B51AB039AB00F6F587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26773C91AB039AB00F6F587 /* PBXTargetDependency */,
+			);
+			name = "FlightWatchCompanion WatchKit Extension";
+			productName = "FlightWatchCompanion WatchKit Extension";
+			productReference = B26773B71AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		B26773C51AB039AB00F6F587 /* FlightWatchCompanion WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26773D51AB039AB00F6F587 /* Build configuration list for PBXNativeTarget "FlightWatchCompanion WatchKit App" */;
+			buildPhases = (
+				B26773C41AB039AB00F6F587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlightWatchCompanion WatchKit App";
+			productName = "FlightWatchCompanion WatchKit App";
+			productReference = B26773C61AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +344,12 @@
 					B26773A21AB0398F00F6F587 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = B267738D1AB0398F00F6F587;
+					};
+					B26773B61AB039AB00F6F587 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B26773C51AB039AB00F6F587 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +368,8 @@
 			targets = (
 				B267738D1AB0398F00F6F587 /* FlightWatchCompanion */,
 				B26773A21AB0398F00F6F587 /* FlightWatchCompanionTests */,
+				B26773B61AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension */,
+				B26773C51AB039AB00F6F587 /* FlightWatchCompanion WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +389,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26773B51AB039AB00F6F587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26773C31AB039AB00F6F587 /* Images.xcassets in Resources */,
+				B26773C71AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26773C41AB039AB00F6F587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27A58791AB07CAA0092DE05 /* sampleQR.jpg in Resources */,
+				B26773E71AB0447400F6F587 /* airport-50.png in Resources */,
+				B26773EF1AB058D500F6F587 /* currency_exchange-75.png in Resources */,
+				B26773CF1AB039AB00F6F587 /* Interface.storyboard in Resources */,
+				B26773ED1AB0541500F6F587 /* sun-50.png in Resources */,
+				B26773D11AB039AB00F6F587 /* Images.xcassets in Resources */,
+				B27A58771AB071C10092DE05 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +435,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B26773B31AB039AB00F6F587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26773EB1AB0506700F6F587 /* WeatherRowController.swift in Sources */,
+				B26773BF1AB039AB00F6F587 /* NotificationController.swift in Sources */,
+				B26773BD1AB039AB00F6F587 /* InterfaceController.swift in Sources */,
+				B2D477241AB1930600F98E85 /* SwiftyJSON.swift in Sources */,
+				B26773E11AB03A8F00F6F587 /* CurrencyInterfaceController.swift in Sources */,
+				B26773E31AB03C8600F6F587 /* FlightRowController.swift in Sources */,
+				B26773E91AB04CA900F6F587 /* DetailsInterfaceController.swift in Sources */,
+				B2D477221AB18AE000F98E85 /* Alamofire.swift in Sources */,
+				B26773DF1AB03A8000F6F587 /* WeatherInterfaceController.swift in Sources */,
+				B26773DD1AB03A6D00F6F587 /* FlightsInterfaceController.swift in Sources */,
+				B26773C11AB039AB00F6F587 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +460,16 @@
 			isa = PBXTargetDependency;
 			target = B267738D1AB0398F00F6F587 /* FlightWatchCompanion */;
 			targetProxy = B26773A41AB0398F00F6F587 /* PBXContainerItemProxy */;
+		};
+		B26773C91AB039AB00F6F587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26773C51AB039AB00F6F587 /* FlightWatchCompanion WatchKit App */;
+			targetProxy = B26773C81AB039AB00F6F587 /* PBXContainerItemProxy */;
+		};
+		B26773D31AB039AB00F6F587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26773B61AB039AB00F6F587 /* FlightWatchCompanion WatchKit Extension */;
+			targetProxy = B26773D21AB039AB00F6F587 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +488,14 @@
 				B267739D1AB0398F00F6F587 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B26773CD1AB039AB00F6F587 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26773CE1AB039AB00F6F587 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FlightWatchCompanion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FlightWatchCompanion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +634,60 @@
 			};
 			name = Release;
 		};
+		B26773D61AB039AB00F6F587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = FlightWatchCompanion_WatchKit_Extension;
+				INFOPLIST_FILE = "FlightWatchCompanion WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		B26773D71AB039AB00F6F587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = FlightWatchCompanion_WatchKit_Extension;
+				INFOPLIST_FILE = "FlightWatchCompanion WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		B26773D91AB039AB00F6F587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlightWatchCompanion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B26773DA1AB039AB00F6F587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FlightWatchCompanion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +707,7 @@
 				B26773AF1AB0398F00F6F587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B26773B01AB0398F00F6F587 /* Build configuration list for PBXNativeTarget "FlightWatchCompanionTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +716,25 @@
 				B26773B21AB0398F00F6F587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26773D51AB039AB00F6F587 /* Build configuration list for PBXNativeTarget "FlightWatchCompanion WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26773D61AB039AB00F6F587 /* Debug */,
+				B26773D71AB039AB00F6F587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26773D81AB039AB00F6F587 /* Build configuration list for PBXNativeTarget "FlightWatchCompanion WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26773D91AB039AB00F6F587 /* Debug */,
+				B26773DA1AB039AB00F6F587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

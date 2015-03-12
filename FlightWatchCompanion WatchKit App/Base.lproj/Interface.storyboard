@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Details-->
+        <scene sceneID="zOf-cJ-w98">
+            <objects>
+                <controller title="Details" id="CsG-1m-IKw">
+                    <items>
+                        <group width="1" height="117.5" alignment="left" layout="vertical" id="o6u-IT-aap">
+                            <items>
+                                <group width="1" alignment="left" id="DSo-JV-5Xd">
+                                    <items>
+                                        <imageView width="30" height="30" alignment="left" image="airport-50.png" contentMode="scaleAspectFit" id="E6D-9t-as1"/>
+                                        <label alignment="right" verticalAlignment="center" text="Flight XY2311" id="tA3-wL-jXo">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="Stockholm to" id="7tk-jr-bXg">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                </label>
+                                <label alignment="center" text="Berlin" id="tXZ-ak-d7B">
+                                    <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <dateLabel alignment="center" textAlignment="center" id="aWD-oP-5rX">
+                                    <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                                </dateLabel>
+                                <dateLabel alignment="center" textAlignment="center" id="mM2-KE-ojw">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <dateFormatterStyle key="dateStyle" none="YES" medium="YES"/>
+                                </dateLabel>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="eYg-ST-seM">
+                            <color key="color" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="134" height="132" alignment="left" layout="vertical" id="CA8-gs-hlb">
+                            <items>
+                                <label alignment="left" text="Boarding:" id="2TG-QB-Y3R">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <dateLabel alignment="left" id="xdA-QA-7IS">
+                                    <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="29"/>
+                                    <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                                    <date key="previewedDate" timeIntervalSinceReferenceDate="431971740">
+                                        <!--2014-09-09 16:09:00 +0000-->
+                                    </date>
+                                </dateLabel>
+                                <label alignment="left" text="Arlanda Terminal 4" numberOfLines="2" id="Ttp-Bh-mSd">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="left" text="Gate: 14F" id="uVB-qi-i75"/>
+                                <label alignment="left" text="Seat: 23B" id="3S8-yR-gfU"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="TTd-yL-jqN">
+                            <color key="color" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <imageView alignment="left" image="sampleQR.jpg" contentMode="scaleAspectFill" id="wts-4s-fNn"/>
+                    </items>
+                    <connections>
+                        <segue destination="5cO-Xg-Z2l" kind="relationship" relationship="nextPage" id="UeV-GH-rEO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="9"/>
+        </scene>
+        <!--Flights-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Flights" id="AgC-eL-Hgc" customClass="FlightsInterfaceController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="rfb-xy-DeT">
+                            <items>
+                                <tableRow identifier="flightrow" id="Zg4-n4-c5n" customClass="FlightRowController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="117.5" alignment="left" layout="vertical" id="X1n-Dr-dIo">
+                                        <items>
+                                            <group width="1" alignment="left" id="a65-J5-0lZ">
+                                                <items>
+                                                    <imageView width="30" height="30" alignment="left" image="airport-50.png" contentMode="scaleAspectFit" id="apR-wt-eiN"/>
+                                                    <label alignment="right" verticalAlignment="center" text="Flight XY2311" id="Hfk-9G-hM7">
+                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label alignment="center" text="Stockholm to" id="VJG-95-nI0">
+                                                <fontDescription key="font" type="system" pointSize="9"/>
+                                            </label>
+                                            <label alignment="center" text="Berlin" id="Tl9-rz-Kyf">
+                                                <color key="textColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <dateLabel alignment="center" textAlignment="center" id="mx8-c0-Fsh">
+                                                <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                                            </dateLabel>
+                                            <dateLabel alignment="center" textAlignment="center" id="4yc-Uu-FLc">
+                                                <fontDescription key="font" type="system" weight="ultraLight" pointSize="10"/>
+                                                <dateFormatterStyle key="dateStyle" none="YES" medium="YES"/>
+                                            </dateLabel>
+                                        </items>
+                                        <connections>
+                                            <segue destination="CsG-1m-IKw" kind="modal" id="deP-T4-Jhb"/>
+                                        </connections>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="flightsTable" destination="rfb-xy-DeT" id="UyW-CJ-R3F"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-10" y="9"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="kNN-Wl-T6s">
+            <objects>
+                <controller title="Weather" id="5cO-Xg-Z2l" customClass="WeatherInterfaceController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" verticalAlignment="center" id="PUe-0R-W5X">
+                            <items>
+                                <tableRow identifier="weatherrow" selectable="NO" id="hgU-PA-rTH" customClass="WeatherRowController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="2QX-yg-idG">
+                                        <items>
+                                            <label width="1" alignment="center" text="Tuesday" textAlignment="center" id="Ele-s2-eqa"/>
+                                            <separator alignment="left" id="GIE-0O-Q4W"/>
+                                            <group width="120" alignment="center" id="ldE-jo-Ae0">
+                                                <items>
+                                                    <imageView width="51" height="51" alignment="center" verticalAlignment="center" image="partlycloudy" id="1KY-GD-Plv"/>
+                                                    <label alignment="center" verticalAlignment="center" text="Mostly sunny" textAlignment="right" numberOfLines="0" id="k9H-Y2-Cs6">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label width="1" height="35" alignment="center" text="5.3° / 1.3°" textAlignment="center" id="r7m-vU-vXH"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dayLabel" destination="Ele-s2-eqa" id="c1z-Kd-GPi"/>
+                                        <outlet property="icon" destination="1KY-GD-Plv" id="rJE-Qu-Uzc"/>
+                                        <outlet property="statusLabel" destination="k9H-Y2-Cs6" id="D4U-e9-ODz"/>
+                                        <outlet property="temperatureLabel" destination="r7m-vU-vXH" id="ghg-oa-aOS"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="weatherTable" destination="PUe-0R-W5X" id="0zU-lL-XXI"/>
+                        <segue destination="eSm-Zo-AMj" kind="relationship" relationship="nextPage" id="l9s-0E-pij"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="445" y="90"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="mX9-40-whe">
+            <objects>
+                <controller title="Currency" id="eSm-Zo-AMj" customClass="CurrencyInterfaceController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="123" alignment="left" verticalAlignment="center" layout="vertical" id="yha-aX-OaS">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text=":" id="Yo0-fN-KkT"/>
+                                <button alignment="center" verticalAlignment="center" backgroundImage="exchange" id="Xh9-jU-rAN">
+                                    <connections>
+                                        <action selector="swapCurrencyBtnClick" destination="eSm-Zo-AMj" id="EWW-xT-M8A"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="center" text="=" id="cG0-DI-4Mk"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="currencyLabel" destination="Yo0-fN-KkT" id="gvx-KY-k07"/>
+                        <outlet property="exchangeLabel" destination="cG0-DI-4Mk" id="d8W-LD-vyk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="633" y="90"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="FlightWatchCompanion_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView width="30" height="30" alignment="center" verticalAlignment="center" image="airport-50.png" contentMode="scaleAspectFit" id="rD9-qo-RYQ"/>
+                                <group alignment="right" verticalAlignment="center" layout="vertical" id="hql-rH-8h4">
+                                    <items>
+                                        <label alignment="left" text="Flight XY2311" id="PxG-pJ-8GB">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                        <label alignment="left" text="ARN to BER" id="9L9-7t-5EZ">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Currently boarding at" textAlignment="center" numberOfLines="2" id="hEz-RV-Dht">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="Gate 14F" textAlignment="center" id="FgT-Tz-9N8">
+                                    <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="379"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController contentMode="scaleAspectFill" id="YCC-NB-fut">
+                    <items>
+                        <label alignment="center" text="Alert Label" numberOfLines="0" id="XkS-y5-khE">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="sashColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="230" y="626"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="FlightWatchCompanion_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="626"/>
+        </scene>
+    </scenes>
+</document>

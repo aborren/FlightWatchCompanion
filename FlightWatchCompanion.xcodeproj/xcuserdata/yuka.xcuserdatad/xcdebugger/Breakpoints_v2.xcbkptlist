@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlightWatchCompanion WatchKit Extension/FlightsInterfaceController.swift"
+            timestampString = "447761880.71899"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FlightsInterfaceController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlightWatchCompanion_WatchKit_Extension.FlightsInterfaceController.flightsTable.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.WKInterfaceTable&gt;"
+                  moduleName = "FlightWatchCompanion WatchKit Extension"
+                  urlString = "file:///Users/yuka/Documents/iPhone%20Projects/FlightWatchCompanion/FlightWatchCompanion%20WatchKit%20Extension/FlightsInterfaceController.swift"
+                  timestampString = "447761880.763258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlightWatchCompanion_WatchKit_Extension.FlightsInterfaceController.flightsTable.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.WKInterfaceTable&gt;"
+                  moduleName = "FlightWatchCompanion WatchKit Extension"
+                  urlString = "file:///Users/yuka/Documents/iPhone%20Projects/FlightWatchCompanion/FlightWatchCompanion%20WatchKit%20Extension/FlightsInterfaceController.swift"
+                  timestampString = "447761880.764506"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlightWatchCompanion_WatchKit_Extension.FlightsInterfaceController.flightsTable.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.WKInterfaceTable&gt;"
+                  moduleName = "FlightWatchCompanion WatchKit Extension"
+                  urlString = "file:///Users/yuka/Documents/iPhone%20Projects/FlightWatchCompanion/FlightWatchCompanion%20WatchKit%20Extension/FlightsInterfaceController.swift"
+                  timestampString = "447761880.764709"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlightWatchCompanion_WatchKit_Extension.FlightsInterfaceController.init (FlightWatchCompanion_WatchKit_Extension.FlightsInterfaceController.Type)() -&gt; FlightWatchCompanion_WatchKit_Extension.FlightsInterfaceController"
+                  moduleName = "FlightWatchCompanion WatchKit Extension"
+                  urlString = "file:///Users/yuka/Documents/iPhone%20Projects/FlightWatchCompanion/FlightWatchCompanion%20WatchKit%20Extension/FlightsInterfaceController.swift"
+                  timestampString = "447761880.764932"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlightWatchCompanion WatchKit Extension/CurrencyInterfaceController.swift"
+            timestampString = "447863768.328"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "callExchangeAndDrawView()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
