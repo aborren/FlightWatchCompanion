@@ -27,5 +27,25 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    override func handleActionWithIdentifier(identifier: String?, forLocalNotification localNotification: UILocalNotification) {
+        if(identifier == "firstButtonAction"){
+            println("clicked first")
+        }else if(identifier == "secondButtonAction"){
+            println("clicked second")
+        }else{
+            println("something else")
+        }
+    }
 
+    override func handleActionWithIdentifier(identifier: String?, forRemoteNotification remoteNotification: [NSObject : AnyObject]) {
+        if(identifier == "firstButtonAction"){
+            println("clicked first")
+        }else if(identifier == "secondButtonAction"){
+            println("clicked second")
+        }else{
+            println("something else")
+        }
+
+    }
 }

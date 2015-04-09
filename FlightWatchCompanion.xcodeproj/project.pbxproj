@@ -32,8 +32,19 @@
 		B26773EF1AB058D500F6F587 /* currency_exchange-75.png in Resources */ = {isa = PBXBuildFile; fileRef = B26773EE1AB058D500F6F587 /* currency_exchange-75.png */; };
 		B27A58771AB071C10092DE05 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B27A58761AB071C10092DE05 /* ApiKeys.plist */; };
 		B27A58791AB07CAA0092DE05 /* sampleQR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A58781AB07CAA0092DE05 /* sampleQR.jpg */; };
+		B2CFA3E31AB9802600B8310D /* samplebarcode.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CFA3E21AB9802600B8310D /* samplebarcode.png */; };
+		B2CFA3E51AB98BAE00B8310D /* TimeAndDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFA3E41AB98BAE00B8310D /* TimeAndDateFormatter.swift */; };
+		B2D1B61E1AB83208008EBE90 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1B61D1AB83208008EBE90 /* Flight.swift */; };
+		B2D1B6201AB8338B008EBE90 /* FlightStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1B61F1AB8338B008EBE90 /* FlightStop.swift */; };
+		B2D1B6221AB83981008EBE90 /* FlightGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1B6211AB83981008EBE90 /* FlightGenerator.swift */; };
+		B2D1B6241AB86610008EBE90 /* Luggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1B6231AB86610008EBE90 /* Luggage.swift */; };
+		B2D1B6281AB86BDF008EBE90 /* LuggageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1B6271AB86BDF008EBE90 /* LuggageInterfaceController.swift */; };
 		B2D477221AB18AE000F98E85 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D477211AB18AE000F98E85 /* Alamofire.swift */; };
 		B2D477241AB1930600F98E85 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D477231AB1930600F98E85 /* SwiftyJSON.swift */; };
+		B2D62AE11AC99764009AA9BD /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2D62AE01AC99764009AA9BD /* images.jpeg */; };
+		B2F45A791AB9B7C300CEB768 /* sampleQR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A58781AB07CAA0092DE05 /* sampleQR.jpg */; };
+		B2F45A7A1AB9B7C500CEB768 /* sampleQR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A58781AB07CAA0092DE05 /* sampleQR.jpg */; };
+		B2F5804E1AB9C6B200F60787 /* LuggageRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F5804D1AB9C6B200F60787 /* LuggageRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,8 +118,17 @@
 		B26773EE1AB058D500F6F587 /* currency_exchange-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "currency_exchange-75.png"; sourceTree = "<group>"; };
 		B27A58761AB071C10092DE05 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "../FlightWatchCompanion WatchKit App/ApiKeys.plist"; sourceTree = "<group>"; };
 		B27A58781AB07CAA0092DE05 /* sampleQR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleQR.jpg; sourceTree = "<group>"; };
+		B2CFA3E21AB9802600B8310D /* samplebarcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplebarcode.png; sourceTree = "<group>"; };
+		B2CFA3E41AB98BAE00B8310D /* TimeAndDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAndDateFormatter.swift; sourceTree = "<group>"; };
+		B2D1B61D1AB83208008EBE90 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		B2D1B61F1AB8338B008EBE90 /* FlightStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightStop.swift; sourceTree = "<group>"; };
+		B2D1B6211AB83981008EBE90 /* FlightGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightGenerator.swift; sourceTree = "<group>"; };
+		B2D1B6231AB86610008EBE90 /* Luggage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Luggage.swift; sourceTree = "<group>"; };
+		B2D1B6271AB86BDF008EBE90 /* LuggageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuggageInterfaceController.swift; sourceTree = "<group>"; };
 		B2D477211AB18AE000F98E85 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		B2D477231AB1930600F98E85 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		B2D62AE01AC99764009AA9BD /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		B2F5804D1AB9C6B200F60787 /* LuggageRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuggageRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,13 +233,18 @@
 				B26773BE1AB039AB00F6F587 /* NotificationController.swift */,
 				B26773C01AB039AB00F6F587 /* GlanceController.swift */,
 				B26773E01AB03A8F00F6F587 /* CurrencyInterfaceController.swift */,
-				B26773E21AB03C8600F6F587 /* FlightRowController.swift */,
+				B26773DE1AB03A8000F6F587 /* WeatherInterfaceController.swift */,
 				B26773EA1AB0506700F6F587 /* WeatherRowController.swift */,
 				B26773E81AB04CA900F6F587 /* DetailsInterfaceController.swift */,
-				B26773DE1AB03A8000F6F587 /* WeatherInterfaceController.swift */,
+				B2D1B6271AB86BDF008EBE90 /* LuggageInterfaceController.swift */,
+				B2F5804D1AB9C6B200F60787 /* LuggageRowController.swift */,
+				B2CFA3E41AB98BAE00B8310D /* TimeAndDateFormatter.swift */,
 				B26773DC1AB03A6D00F6F587 /* FlightsInterfaceController.swift */,
+				B26773E21AB03C8600F6F587 /* FlightRowController.swift */,
+				B2B653361AB87E97001AD22B /* Models */,
 				B25C61DA1AB1DFB800048B30 /* External Swift Libraries */,
 				B26773C21AB039AB00F6F587 /* Images.xcassets */,
+				B2D1B6211AB83981008EBE90 /* FlightGenerator.swift */,
 				B26773B91AB039AB00F6F587 /* Supporting Files */,
 			);
 			path = "FlightWatchCompanion WatchKit Extension";
@@ -238,9 +263,11 @@
 			isa = PBXGroup;
 			children = (
 				B26773E61AB0447400F6F587 /* airport-50.png */,
+				B2CFA3E21AB9802600B8310D /* samplebarcode.png */,
 				B27A58781AB07CAA0092DE05 /* sampleQR.jpg */,
 				B26773CD1AB039AB00F6F587 /* Interface.storyboard */,
 				B26773EE1AB058D500F6F587 /* currency_exchange-75.png */,
+				B2D62AE01AC99764009AA9BD /* images.jpeg */,
 				B26773EC1AB0541500F6F587 /* sun-50.png */,
 				B26773D01AB039AB00F6F587 /* Images.xcassets */,
 				B26773CB1AB039AB00F6F587 /* Supporting Files */,
@@ -254,6 +281,16 @@
 				B26773CC1AB039AB00F6F587 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2B653361AB87E97001AD22B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2D1B6231AB86610008EBE90 /* Luggage.swift */,
+				B2D1B61F1AB8338B008EBE90 /* FlightStop.swift */,
+				B2D1B61D1AB83208008EBE90 /* Flight.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F45A7A1AB9B7C500CEB768 /* sampleQR.jpg in Resources */,
 				B26773991AB0398F00F6F587 /* Main.storyboard in Resources */,
 				B267739E1AB0398F00F6F587 /* LaunchScreen.xib in Resources */,
 				B267739B1AB0398F00F6F587 /* Images.xcassets in Resources */,
@@ -397,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26773C31AB039AB00F6F587 /* Images.xcassets in Resources */,
+				B2F45A791AB9B7C300CEB768 /* sampleQR.jpg in Resources */,
 				B26773C71AB039AB00F6F587 /* FlightWatchCompanion WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,10 +446,12 @@
 			files = (
 				B27A58791AB07CAA0092DE05 /* sampleQR.jpg in Resources */,
 				B26773E71AB0447400F6F587 /* airport-50.png in Resources */,
+				B2D62AE11AC99764009AA9BD /* images.jpeg in Resources */,
 				B26773EF1AB058D500F6F587 /* currency_exchange-75.png in Resources */,
 				B26773CF1AB039AB00F6F587 /* Interface.storyboard in Resources */,
 				B26773ED1AB0541500F6F587 /* sun-50.png in Resources */,
 				B26773D11AB039AB00F6F587 /* Images.xcassets in Resources */,
+				B2CFA3E31AB9802600B8310D /* samplebarcode.png in Resources */,
 				B27A58771AB071C10092DE05 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,13 +482,20 @@
 			files = (
 				B26773EB1AB0506700F6F587 /* WeatherRowController.swift in Sources */,
 				B26773BF1AB039AB00F6F587 /* NotificationController.swift in Sources */,
+				B2D1B6241AB86610008EBE90 /* Luggage.swift in Sources */,
+				B2F5804E1AB9C6B200F60787 /* LuggageRowController.swift in Sources */,
+				B2D1B6201AB8338B008EBE90 /* FlightStop.swift in Sources */,
+				B2D1B6221AB83981008EBE90 /* FlightGenerator.swift in Sources */,
+				B2CFA3E51AB98BAE00B8310D /* TimeAndDateFormatter.swift in Sources */,
 				B26773BD1AB039AB00F6F587 /* InterfaceController.swift in Sources */,
 				B2D477241AB1930600F98E85 /* SwiftyJSON.swift in Sources */,
 				B26773E11AB03A8F00F6F587 /* CurrencyInterfaceController.swift in Sources */,
+				B2D1B6281AB86BDF008EBE90 /* LuggageInterfaceController.swift in Sources */,
 				B26773E31AB03C8600F6F587 /* FlightRowController.swift in Sources */,
 				B26773E91AB04CA900F6F587 /* DetailsInterfaceController.swift in Sources */,
 				B2D477221AB18AE000F98E85 /* Alamofire.swift in Sources */,
 				B26773DF1AB03A8000F6F587 /* WeatherInterfaceController.swift in Sources */,
+				B2D1B61E1AB83208008EBE90 /* Flight.swift in Sources */,
 				B26773DD1AB03A6D00F6F587 /* FlightsInterfaceController.swift in Sources */,
 				B26773C11AB039AB00F6F587 /* GlanceController.swift in Sources */,
 			);

@@ -13,11 +13,17 @@ import Foundation
 class FlightsInterfaceController: WKInterfaceController {
 
     @IBOutlet var flightsTable: WKInterfaceTable!
+    var flights: [Flight] = []
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        flights.append(FlightGenerator.flight4())
+        flights.append(FlightGenerator.flight3())
+        flights.append(FlightGenerator.flight2())
+        flights.append(FlightGenerator.flight1())
+        flights.append(FlightGenerator.flight0())
         self.setFlightsTable()
     }
 
@@ -32,17 +38,35 @@ class FlightsInterfaceController: WKInterfaceController {
     }
     
     func setFlightsTable(){
-        self.flightsTable.setNumberOfRows(/*departures count*/3, withRowType: "flightrow")
+        self.flightsTable.setNumberOfRows(flights.count, withRowType: "flightrow")
         
-        /*self.departuresTable.setNumberOfRows(departures.count, withRowType: "departuresrowcontroller")
-        for(var i = 0; i < departures.count; i++){
-            var row: DeparturesRowController = self.departuresTable.rowControllerAtIndex(i) as DeparturesRowController
-            row.directionLabel.setText("\(departures[i].lineNumber) \(departures[i].direction)")
-            //row.numberLabel.setText()
-            var df = NSDateFormatter()
-            df.dateFormat = "HH:mm"
-            row.timeLabel.setText(df.stringFromDate(departures[i].departureTime))
-        }*/
+        for(var i = 0; i < flights.count; i++){
+            var row = self.flightsTable.rowControllerAtIndex(i) as! FlightRowController
+            row.setupRow(flights[i])
+        }
     }
-
+    
+    override func contextsForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> [AnyObject]? {
+        return [self.flights[rowIndex], self.flights[rowIndex], self.flights[rowIndex], self.flights[rowIndex]]
+    }
+    
+    override func handleActionWithIdentifier(identifier: String?, forLocalNotification localNotification: UILocalNotification) {
+        if(identifier == "firstButtonAction"){
+            println("clicked first")
+        }else if(identifier == "secondButtonAction"){
+            println("clicked second")
+        }else{
+            println("something else")
+        }
+    }
+    override func handleActionWithIdentifier(identifier: String?, forRemoteNotification remoteNotification: [NSObject : AnyObject]) {
+        if(identifier == "firstButtonAction"){
+            println("clicked first")
+        }else if(identifier == "secondButtonAction"){
+            println("clicked second")
+        }else{
+            println("something else")
+        }
+        
+    }
 }

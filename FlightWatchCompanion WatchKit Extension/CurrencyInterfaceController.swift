@@ -16,8 +16,8 @@ class CurrencyInterfaceController: WKInterfaceController {
     @IBOutlet var exchangeLabel: WKInterfaceLabel!
     
     //set from context later on
-    var fromNation = "SE"
-    var toNation = "DE"
+    var fromNation: String?
+    var toNation: String?
     
     //maybe make this to a class instead
     var fromCurrency: String = ""
@@ -27,7 +27,9 @@ class CurrencyInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+        let flight = context as! Flight
+        self.fromNation = flight.from?.countryCode
+        self.toNation = flight.to?.countryCode
         // Configure interface objects here.
     }
 
@@ -46,21 +48,22 @@ class CurrencyInterfaceController: WKInterfaceController {
         request(.GET, "http://www.freecurrencyconverterapi.com/api/v3/countries", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (_, _, response, _) -> Void in
             if let jsonResponse: AnyObject = response{
                 var json = JSON(jsonResponse)
-                println(json["results"][self.fromNation])
-                println(json["results"][self.toNation])
+                if let fromNation = self.fromNation{
+                    if let from = json["results"][fromNation]["currencyId"].string{
+                        self.fromCurrency = from
+                    }
+                    if let fromSymbol = json["results"][fromNation]["currencySymbol"].string {
+                        self.fromCurrencySymbol = fromSymbol
+                    }
+                }
                 
-                if let from = json["results"][self.fromNation]["currencyId"].string{
-                    self.fromCurrency = from
-                }
-                if let fromSymbol = json["results"][self.fromNation]["currencySymbol"].string {
-                    self.fromCurrencySymbol = fromSymbol
-                }
-                
-                if let to = json["results"][self.toNation]["currencyId"].string{
-                    self.toCurrency = to
-                }
-                if let toSymbol = json["results"][self.toNation]["currencySymbol"].string{
-                    self.toCurrencySymbol = toSymbol
+                if let toNation = self.toNation{
+                    if let to = json["results"][toNation]["currencyId"].string{
+                        self.toCurrency = to
+                    }
+                    if let toSymbol = json["results"][toNation]["currencySymbol"].string{
+                        self.toCurrencySymbol = toSymbol
+                    }
                 }
                 
                 self.callExchangeAndDrawView()
@@ -73,8 +76,9 @@ class CurrencyInterfaceController: WKInterfaceController {
             if let jsonResponse: AnyObject = response{
                 var json = JSON(jsonResponse)
                 let exchange = json["\(self.fromCurrency)_\(self.toCurrency)"]
+                let exchangeString = String(format: "%.4f", exchange.double!)
                 self.currencyLabel.setText("\(self.fromCurrency) : \(self.toCurrency)")
-                self.exchangeLabel.setText("1\(self.fromCurrencySymbol) = \(exchange)\(self.toCurrencySymbol)")
+                self.exchangeLabel.setText("1\(self.fromCurrencySymbol) = \(exchangeString)\(self.toCurrencySymbol)")
             }
         }
 

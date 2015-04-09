@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -8,7 +8,7 @@
         <!--Details-->
         <scene sceneID="zOf-cJ-w98">
             <objects>
-                <controller title="Details" id="CsG-1m-IKw">
+                <controller title="Details" id="CsG-1m-IKw" customClass="DetailsInterfaceController" customModule="FlightWatchCompanion_WatchKit_Extension">
                     <items>
                         <group width="1" height="117.5" alignment="left" layout="vertical" id="o6u-IT-aap">
                             <items>
@@ -26,59 +26,173 @@
                                 <label alignment="center" text="Berlin" id="tXZ-ak-d7B">
                                     <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </label>
-                                <dateLabel alignment="center" textAlignment="center" id="aWD-oP-5rX">
-                                    <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
-                                </dateLabel>
-                                <dateLabel alignment="center" textAlignment="center" id="mM2-KE-ojw">
-                                    <fontDescription key="font" type="system" pointSize="10"/>
-                                    <dateFormatterStyle key="dateStyle" none="YES" medium="YES"/>
-                                </dateLabel>
+                                <label alignment="center" text="7:09 PM" id="hyj-ju-hKc"/>
+                                <label alignment="center" text="Sep 9, 2014" id="WGl-Va-hTE">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="10"/>
+                                </label>
                             </items>
                         </group>
                         <separator alignment="left" id="eYg-ST-seM">
                             <color key="color" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </separator>
-                        <group width="134" height="132" alignment="left" layout="vertical" id="CA8-gs-hlb">
+                        <group width="1" alignment="left" layout="vertical" id="wnj-Uq-GJP" userLabel="Checkin">
+                            <items>
+                                <label alignment="left" text="Online check-in:" id="Awi-tU-mur"/>
+                                <label alignment="left" text="Now available" numberOfLines="0" id="d9r-cO-zH8">
+                                    <color key="textColor" red="0.37254901959999998" green="0.68627450980000004" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <group width="1" alignment="left" id="LbA-M8-0gN">
+                                    <items>
+                                        <label alignment="left" text="5:50 PM" id="zca-vy-sbB">
+                                            <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label alignment="right" text="Sep 4, 2015" id="djU-MI-ruS">
+                                            <fontDescription key="font" type="system" pointSize="9"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="iKc-7y-zWu">
+                                    <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </separator>
+                                <label height="20" alignment="left" text="Check-in:" id="px8-0q-vA5"/>
+                                <group width="1" alignment="left" id="t4B-S2-WCA">
+                                    <items>
+                                        <label alignment="left" text="5:50 PM" id="pcg-LH-Red">
+                                            <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label alignment="right" text="Sep 4, 2015" id="bGr-5y-QY0">
+                                            <fontDescription key="font" type="system" pointSize="9"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label alignment="left" text="Now checking in at:" numberOfLines="0" id="RVg-i5-Ws3">
+                                    <color key="textColor" red="0.37254901959999998" green="0.68627450980000004" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="left" text="Counter: n/a" id="gx3-Ug-VOb">
+                                    <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label alignment="left" text="Terminal n/a" numberOfLines="2" id="h4a-tm-gKH">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="CA8-gs-hlb" userLabel="Boarding">
                             <items>
                                 <label alignment="left" text="Boarding:" id="2TG-QB-Y3R">
-                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
-                                <dateLabel alignment="left" id="xdA-QA-7IS">
+                                <label alignment="left" text="5:30 PM" id="40L-dV-rmV">
                                     <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="29"/>
-                                    <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
-                                    <date key="previewedDate" timeIntervalSinceReferenceDate="431971740">
-                                        <!--2014-09-09 16:09:00 +0000-->
-                                    </date>
-                                </dateLabel>
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                </label>
                                 <label alignment="left" text="Arlanda Terminal 4" numberOfLines="2" id="Ttp-Bh-mSd">
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                 </label>
                                 <label alignment="left" text="Gate: 14F" id="uVB-qi-i75"/>
                                 <label alignment="left" text="Seat: 23B" id="3S8-yR-gfU"/>
+                                <separator alignment="left" id="TTd-yL-jqN">
+                                    <color key="color" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </separator>
+                                <imageView alignment="left" image="sampleQR.jpg" contentMode="scaleAspectFill" id="wts-4s-fNn"/>
                             </items>
                         </group>
-                        <separator alignment="left" id="TTd-yL-jqN">
-                            <color key="color" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </separator>
-                        <imageView alignment="left" image="sampleQR.jpg" contentMode="scaleAspectFill" id="wts-4s-fNn"/>
                     </items>
                     <connections>
-                        <segue destination="5cO-Xg-Z2l" kind="relationship" relationship="nextPage" id="UeV-GH-rEO"/>
+                        <outlet property="boardinQR" destination="wts-4s-fNn" id="fEQ-hu-Zf4"/>
+                        <outlet property="boardingGateLabel" destination="uVB-qi-i75" id="hF9-A1-8Tb"/>
+                        <outlet property="boardingGroup" destination="CA8-gs-hlb" id="aav-Tj-wcc"/>
+                        <outlet property="boardingSeatLabel" destination="3S8-yR-gfU" id="A1c-kX-OuT"/>
+                        <outlet property="boardingSeparator" destination="TTd-yL-jqN" id="dV0-kY-UIy"/>
+                        <outlet property="boardingTerminalLabel" destination="Ttp-Bh-mSd" id="PBk-si-roQ"/>
+                        <outlet property="boardingTimeLabel" destination="40L-dV-rmV" id="jSE-Ei-E24"/>
+                        <outlet property="checkinCounterLabel" destination="gx3-Ug-VOb" id="48H-DL-fyZ"/>
+                        <outlet property="checkinDateLabel" destination="bGr-5y-QY0" id="tpm-Od-PAb"/>
+                        <outlet property="checkinGroup" destination="wnj-Uq-GJP" id="Jqk-Fv-MCj"/>
+                        <outlet property="checkinStatusLabel" destination="RVg-i5-Ws3" id="o4T-uz-6Y7"/>
+                        <outlet property="checkinTerminalLabel" destination="h4a-tm-gKH" id="Yyb-lF-Vw4"/>
+                        <outlet property="checkinTimeLabel" destination="pcg-LH-Red" id="JXF-UL-m6v"/>
+                        <outlet property="dateLabel" destination="WGl-Va-hTE" id="X7W-5L-VN8"/>
+                        <outlet property="flightNumberLabel" destination="tA3-wL-jXo" id="b1T-Gv-mAs"/>
+                        <outlet property="fromLabel" destination="7tk-jr-bXg" id="BB2-NL-gDR"/>
+                        <outlet property="onlineCheckinDateLabel" destination="djU-MI-ruS" id="vgh-pq-Avm"/>
+                        <outlet property="onlineCheckinStatusLabel" destination="d9r-cO-zH8" id="l4o-ig-SOG"/>
+                        <outlet property="onlineCheckinTimeLabel" destination="zca-vy-sbB" id="eR1-NR-hXe"/>
+                        <outlet property="timeLabel" destination="hyj-ju-hKc" id="gmm-aI-7DP"/>
+                        <outlet property="toLabel" destination="tXZ-ak-d7B" id="CbA-CF-LWg"/>
+                        <segue destination="iJr-Oa-42t" kind="relationship" relationship="nextPage" id="wuy-Kp-adJ"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="9"/>
+            <point key="canvasLocation" x="5" y="-68.25"/>
+        </scene>
+        <!--Baggage-->
+        <scene sceneID="qmP-2u-zTu">
+            <objects>
+                <controller title="Baggage" id="iJr-Oa-42t" customClass="LuggageInterfaceController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" verticalAlignment="center" text="Information about baggage dropoff and your checked in baggage will be shown here when data is available." numberOfLines="0" id="EYZ-JL-KbF"/>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="6eQ-Vr-xNb" userLabel="baggage">
+                            <items>
+                                <label height="17" alignment="left" text="Checked-in items:" numberOfLines="0" id="ku9-Z8-MZc">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <table alignment="left" id="8M2-w5-p3K">
+                                    <items>
+                                        <tableRow identifier="baggage" id="1JW-jW-gj7" customClass="LuggageRowController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="dNP-vb-IMI">
+                                                <items>
+                                                    <label alignment="center" text="Baggage data" textAlignment="center" id="jsF-H3-zKc">
+                                                        <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                    <imageView alignment="left" image="samplebarcode.png" id="rqn-Rv-N1a"/>
+                                                </items>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" verticalAlignment="center" layout="vertical" id="vMy-SZ-s7f" userLabel="counter">
+                            <items>
+                                <label alignment="left" text="Drop-off:" id="aPp-2z-dMe"/>
+                                <label alignment="left" text="5:30 PM" id="ERF-Of-f77">
+                                    <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                </label>
+                                <label alignment="left" text="Counter: 14-16" id="Jlt-xw-r6O"/>
+                                <label alignment="left" text="Arlanda Terminal 4" numberOfLines="2" id="4Z8-Fs-bBm">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="baggageGroup" destination="6eQ-Vr-xNb" id="IzU-50-5uh"/>
+                        <outlet property="baggageItemsLabel" destination="ku9-Z8-MZc" id="zy0-zb-pAo"/>
+                        <outlet property="baggageTable" destination="8M2-w5-p3K" id="1UK-ds-hYd"/>
+                        <outlet property="dropoffCounterLabel" destination="Jlt-xw-r6O" id="aA9-3b-Iyh"/>
+                        <outlet property="dropoffGroup" destination="vMy-SZ-s7f" id="U0s-wQ-AMK"/>
+                        <outlet property="dropoffTerminalLabel" destination="4Z8-Fs-bBm" id="1ld-u6-PCu"/>
+                        <outlet property="dropoffTimeLabel" destination="ERF-Of-f77" id="QT2-vh-JSL"/>
+                        <outlet property="informationLabel" destination="EYZ-JL-KbF" id="RjA-eK-sRF"/>
+                        <segue destination="5cO-Xg-Z2l" kind="relationship" relationship="nextPage" id="a9T-eY-Ll8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="206" y="-74.5"/>
         </scene>
         <!--Flights-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller title="Flights" id="AgC-eL-Hgc" customClass="FlightsInterfaceController" customModule="FlightWatchCompanion_WatchKit_Extension">
                     <items>
-                        <table alignment="left" id="rfb-xy-DeT">
+                        <table alignment="left" verticalAlignment="center" id="rfb-xy-DeT">
                             <items>
                                 <tableRow identifier="flightrow" id="Zg4-n4-c5n" customClass="FlightRowController" customModule="FlightWatchCompanion_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="117.5" alignment="left" layout="vertical" id="X1n-Dr-dIo">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="X1n-Dr-dIo">
                                         <items>
                                             <group width="1" alignment="left" id="a65-J5-0lZ">
                                                 <items>
@@ -94,18 +208,28 @@
                                             <label alignment="center" text="Berlin" id="Tl9-rz-Kyf">
                                                 <color key="textColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
-                                            <dateLabel alignment="center" textAlignment="center" id="mx8-c0-Fsh">
-                                                <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
-                                            </dateLabel>
-                                            <dateLabel alignment="center" textAlignment="center" id="4yc-Uu-FLc">
+                                            <label alignment="center" text="7:09 PM" id="vgL-d5-SYR"/>
+                                            <label alignment="center" text="Sep 9, 2014" id="Ao7-IF-vxT">
                                                 <fontDescription key="font" type="system" weight="ultraLight" pointSize="10"/>
-                                                <dateFormatterStyle key="dateStyle" none="YES" medium="YES"/>
-                                            </dateLabel>
+                                            </label>
+                                            <separator alignment="left" id="bYH-Od-icF">
+                                                <color key="color" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <label alignment="center" verticalAlignment="bottom" text="Online checkin available" textAlignment="center" numberOfLines="0" id="hDR-Y3-xbV"/>
                                         </items>
                                         <connections>
                                             <segue destination="CsG-1m-IKw" kind="modal" id="deP-T4-Jhb"/>
                                         </connections>
                                     </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="Ao7-IF-vxT" id="lmx-8R-6IF"/>
+                                        <outlet property="flightNumberLabel" destination="Hfk-9G-hM7" id="lQi-yf-xYj"/>
+                                        <outlet property="fromLabel" destination="VJG-95-nI0" id="Fda-A9-vhi"/>
+                                        <outlet property="statusLabel" destination="hDR-Y3-xbV" id="8fw-Oo-lQ4"/>
+                                        <outlet property="statusSeparator" destination="bYH-Od-icF" id="7tL-5D-sbJ"/>
+                                        <outlet property="timeLabel" destination="vgL-d5-SYR" id="b2q-Mn-5fz"/>
+                                        <outlet property="toLabel" destination="Tl9-rz-Kyf" id="QeU-lX-qAt"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
@@ -115,7 +239,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-10" y="9"/>
+            <point key="canvasLocation" x="-273" y="85"/>
         </scene>
         <!--Weather-->
         <scene sceneID="kNN-Wl-T6s">
@@ -220,33 +344,39 @@
             </objects>
             <point key="canvasLocation" x="235" y="379"/>
         </scene>
-        <!--Static Notification Interface Controller-->
+        <!--images.jpeg-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
-                <notificationController contentMode="scaleAspectFill" id="YCC-NB-fut">
+                <notificationController backgroundImage="images.jpeg" contentMode="scaleAspectFill" id="YCC-NB-fut">
                     <items>
-                        <label alignment="center" text="Alert Label" numberOfLines="0" id="XkS-y5-khE">
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="XkS-y5-khE"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
-                        <color key="sashColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </notificationCategory>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" wantsSashBlur="YES" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
-                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                        <segue destination="gTd-mi-uB5" kind="relationship" relationship="dynamicNotificationInterface" id="Ean-pD-qZ7"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="230" y="626"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="KIl-fV-djm">
+        <!--images.jpeg-->
+        <scene sceneID="VVp-Xr-zay">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="FlightWatchCompanion_WatchKit_App" customModuleProvider="target"/>
+                <controller backgroundImage="images.jpeg" contentMode="scaleAspectFill" id="gTd-mi-uB5" customClass="NotificationController" customModule="FlightWatchCompanion_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" numberOfLines="0" id="XRa-Oi-34p">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" numberOfLines="0" id="YTZ-ab-ieY"/>
+                    </items>
+                    <connections>
+                        <outlet property="botLabel" destination="YTZ-ab-ieY" id="fDP-DX-qJM"/>
+                        <outlet property="topLabel" destination="XRa-Oi-34p" id="7fY-5r-br8"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="548" y="626"/>
+            <point key="canvasLocation" x="530" y="626"/>
         </scene>
     </scenes>
 </document>

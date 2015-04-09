@@ -19,21 +19,25 @@ class WeatherInterfaceController: WKInterfaceController {
     var apiKey: String = "bf7df99ad9fde30fa56cb4c047b426e8" //not sure how to get from plist on a watchkit extension
     var imageDictionary: [String:String] = ["01d":"sunny", "02d":"partlycloudy", "03d":"cloudy", "04d":"brokencloudy", "09d":"showery", "10d":"rainy", "11d":"thundery", "13d":"snowy", "50d":"misty", "01n":"clearnighty", "02n":"partlycloudynight", "03n":"cloudy", "04n":"brokencloudy", "09n":"showery", "10n":"rainyneutral", "11n":"thundery", "13n":"snowy", "50n":"mistynight"]
     
+    var city: String?
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface objects here.
+        self.city = (context as! Flight).to?.city
+        self.city = self.city?.stringByReplacingOccurrencesOfString(" ", withString: "+", options: nil, range: nil)
+        
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        
-        let city = "Berlin" //needs formatting for " " etc
-        
-        request(.GET, "http://api.openweathermap.org/data/2.5/forecast/daily?q=\(city)&mode=json&units=metric&cnt=7&APPID=\(apiKey)", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (_, _, response, _) -> Void in
-            if let jsonResponse: AnyObject = response{
-                println(jsonResponse)
-                self.setWeatherTable(JSON(jsonResponse))
+        if let city = self.city{
+            request(.GET, "http://api.openweathermap.org/data/2.5/forecast/daily?q=\(city)&mode=json&units=metric&cnt=7&APPID=\(apiKey)", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (_, _, response, _) -> Void in
+                if let jsonResponse: AnyObject = response{
+                    println(jsonResponse)
+                    self.setWeatherTable(JSON(jsonResponse))
+                }
             }
         }
     }
@@ -48,7 +52,7 @@ class WeatherInterfaceController: WKInterfaceController {
             self.weatherTable.setNumberOfRows(days.count, withRowType: "weatherrow")
             
             for(var i = 0; i < days.count; i++){
-                var row: WeatherRowController = self.weatherTable.rowControllerAtIndex(i) as WeatherRowController
+                var row: WeatherRowController = self.weatherTable.rowControllerAtIndex(i) as! WeatherRowController
                 
                 row.dayLabel.setText(self.dayStringFromEpochTime(days[i]["dt"].int))
                 if let imageIcon = days[i]["weather"][0]["icon"].string{
