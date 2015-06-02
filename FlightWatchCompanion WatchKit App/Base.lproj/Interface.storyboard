@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -125,7 +125,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="5" y="-68.25"/>
+            <point key="canvasLocation" x="-39" y="89.5"/>
         </scene>
         <!--Baggage-->
         <scene sceneID="qmP-2u-zTu">
@@ -182,7 +182,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="206" y="-74.5"/>
+            <point key="canvasLocation" x="112" y="89.5"/>
         </scene>
         <!--Flights-->
         <scene sceneID="aou-V4-d1y">
@@ -239,7 +239,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-273" y="85"/>
+            <point key="canvasLocation" x="-245" y="87"/>
         </scene>
         <!--Weather-->
         <scene sceneID="kNN-Wl-T6s">
@@ -280,7 +280,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="445" y="90"/>
+            <point key="canvasLocation" x="268" y="87"/>
         </scene>
         <!--Currency-->
         <scene sceneID="mX9-40-whe">
@@ -289,13 +289,17 @@
                     <items>
                         <group width="1" height="123" alignment="left" verticalAlignment="center" layout="vertical" id="yha-aX-OaS">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text=":" id="Yo0-fN-KkT"/>
+                                <label alignment="center" verticalAlignment="center" text="SEK : EUR" id="Yo0-fN-KkT"/>
                                 <button alignment="center" verticalAlignment="center" backgroundImage="exchange" id="Xh9-jU-rAN">
                                     <connections>
                                         <action selector="swapCurrencyBtnClick" destination="eSm-Zo-AMj" id="EWW-xT-M8A"/>
                                     </connections>
                                 </button>
-                                <label alignment="center" verticalAlignment="center" text="=" id="cG0-DI-4Mk"/>
+                                <label alignment="center" verticalAlignment="center" id="cG0-DI-4Mk">
+                                    <string key="text" base64-UTF8="YES">
+MSBrciA9IDAuMTA3OAUg4oKsA
+</string>
+                                </label>
                             </items>
                         </group>
                     </items>
@@ -305,7 +309,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="633" y="90"/>
+            <point key="canvasLocation" x="426" y="90"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -342,7 +346,7 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="379"/>
+            <point key="canvasLocation" x="-245" y="-134"/>
         </scene>
         <!--images.jpeg-->
         <scene sceneID="AEw-b0-oYE">
